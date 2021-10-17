@@ -1,0 +1,11 @@
+def root_of_a_number(n):
+    print(n)
+    root = 0
+    while n > 0:
+        root += n % 10
+        n //= 10
+    if root < 10:
+        return root
+    else:
+        return root_of_a_number(root)
+print (root_of_a_number(12397))
