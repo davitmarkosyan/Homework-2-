@@ -1,0 +1,16 @@
+import math
+a=float(input())
+b= float(input())
+c = float(input())
+#a*x**2+b*x+c=0
+if a==0:
+    print("Linear")
+    print (-c/b)
+else:
+    print ("Quadratic")
+    print (b * b - 4 * a * c)
+if  (b * b - 4 * a * c)<0 :
+        print ("No Solution")
+else:
+    print ((-b+math.sqrt(b * b - 4 * a * c))/2*a)
+    print ((-b - math.sqrt(b * b - 4 * a * c)) / 2 * a)
