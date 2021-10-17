@@ -1,0 +1,8 @@
+n = int(input())
+base_number = 1
+countof_divisors = 0
+while base_number <= n:
+    if n % base_number == 0:
+        countof_divisors += 1
+    base_number += 1
+print(countof_divisors)
