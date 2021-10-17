@@ -1,0 +1,9 @@
+a= int(input())
+b= int(input())
+c= int(input())
+if a+b>c and b+c>a and c+a>b:
+    print ("non-degenerate")
+elif a ** 2 < b ** 2 + c ** 2 or c ** 2 < b ** 2 + a ** 2 or b ** 2 < a ** 2 + c ** 2 :
+    print ("Acute")
+elif a ** 2 = b ** 2+c ** 2 or c ** 2 = b ** 2+ a ** 2 or b ** 2=a ** 2+c ** 2 :
+    print ("Right")
